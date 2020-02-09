@@ -1,0 +1,518 @@
+/*  1) Style de base
+===================================================================================================================
+*/
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #333;
+    color: #fff;
+    font-size: 1.1em;
+    line-height: 1.5;
+    text-align: center;
+}
+
+img{
+    display: block;
+    width: 100%;
+    height: 40vh;
+}
+
+h1, h2, h3{
+    margin: 0;
+    padding: 1em 0;
+}
+
+p{
+    margin: 0;
+    padding: 1em 0;
+}
+
+.btn{
+    transition: 0.2s;
+    display: inline-block;
+    background: #333;
+    color: #FFF;
+    text-decoration: none;
+    padding: 1em 2em;
+    border: 1px solid #666;
+    margin: 0.5em 0;
+    box-shadow: 0 0 10px #1eff4e, 0 0 30px #1eff4e, 0 0 10px #1eff4e, 0 0 30px #1eff4e;
+}
+
+.btn:hover{
+    background: #eaeaea;
+    color: #333;
+    transition: 0.2s;
+}
+
+/*  2) Header Showcase
+===================================================================================================================
+*/
+
+#showcase {
+    min-height: 450px;
+    color: #fff;
+    text-align: center;
+}
+
+nav ul{
+    list-style-type: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+}
+
+
+li a{
+    display: block;
+    color: #fff;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color: #111;
+}
+
+/*  3) Images
+===================================================================================================================
+*/
+
+#showcase .bg-image {
+    position: absolute;
+    background: #333 url("../images/asia.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#showcase .bg-image2 {
+    position: absolute;
+    background: #333 url("../images/couture.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.7s;
+}
+
+#showcase .bg-image3 {
+    position: absolute;
+    background: #333 url("../images/college.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.7s;
+}
+
+#showcase .bg-image4 {
+    position: absolute;
+    background: #333 url("../images/orientation.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.7s;
+}
+
+#showcase .bg-image5 {
+    position: absolute;
+    background: #333 url("../images/buroscope.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.7s;
+}
+
+#showcase .bg-image6 {
+    position: absolute;
+    background: #333 url("../images/codecademie.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.7s;
+}
+
+#showcase:hover .bg-image2 {
+    opacity: 0.4;
+    transition: all 0.7s;
+}
+
+#showcase:hover .bg-image3 {
+    opacity: 0.4;
+    transition: all 0.7s;
+}
+
+#showcase:hover .bg-image4 {
+    opacity: 0.4;
+    transition: all 0.7s;
+}
+
+#showcase:hover .bg-image5 {
+    opacity: 0.4;
+    transition: all 0.7s;
+}
+
+#showcase:hover .bg-image6 {
+    opacity: 0.4;
+    transition: all 0.7s;
+}
+
+
+#showcase h1{
+    padding-top: 100px;
+    padding-bottom: 0;
+}
+
+#showcase .content-wrap,
+#section-a .content-wrap {
+    padding: 0 2vw;
+}
+
+/*  4) Section-A
+===================================================================================================================
+*/
+#section-a {
+    background: #eaeaea;
+    border: 1px solid #fff;
+    box-shadow: 0 0 10px #1eff4e, 0 0 30px #1eff4e, 0 0 10px #1eff4e, 0 0 30px #1eff4e;
+    color: #333;
+    padding-bottom: 2em;
+}
+
+#section-a2 {
+    background: #eaeaea;
+    border: 1px solid #fff;
+    color: #333;
+    padding-bottom: 1em;  
+}
+
+/*  5) Section-B
+===================================================================================================================
+*/
+
+#section-b{
+    padding: 2em 1em 1em;
+}
+
+#section-b ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#section-b li{
+    margin-bottom: 1em;
+    background: #fff;
+    color: #333;
+    border: 1px solid #fff;
+    box-shadow: 0 0 10px #1eff4e, 0 0 30px #1eff4e, 0 0 10px #1eff4e, 0 0 30px #1eff4e;
+}
+
+.card-content{
+    padding: 1.5em;
+}
+
+/*  6) Section-C
+===================================================================================================================
+*/
+
+#section-c {
+    border: 1px solid #fff;
+    box-shadow: 0 0 10px #1eff4e, 0 0 30px #1eff4e, 0 0 10px #1eff4e, 0 0 30px #1eff4e;
+    z-index: 2;
+    background: #fff;
+    color: #333;
+    padding: 2em;
+}
+
+/*  7) Section-D
+===================================================================================================================
+*/
+
+#section-d .box {
+    padding: 2em;
+    color: #fff;
+}
+
+#section-d .box:first-child {
+    background: #477250;
+}
+
+/*  8) Footer
+===================================================================================================================
+*/
+
+#main-footer{
+    padding: 2em;
+    background: #000;
+    color: #fff;
+    text-align: center;
+}
+
+#main-footer a{
+    text-decoration: none;
+    color: rgb(40, 122, 230);
+}
+
+.neon{
+    text-shadow: 0 0 10px #1eff4e, 0 0 30px #1eff4e, 0 0 10px #1eff4e, 0 0 30px #1eff4e;
+}
+
+/*  9) Media Querys
+===================================================================================================================
+*/
+
+@media(min-width: 700px) {
+    #imgmail img {
+        width: 120px;
+        height: 120px;
+        display: initial;
+        position: absolute;
+        left: 45%;
+        top: 23%;
+        z-index: 2;
+        float: center;
+    }
+}
+@media(max-width: 700px){
+    #imgmail img {
+        width: 120px;
+        height: 120px;
+        display: initial;
+        position: absolute;
+        left: 45%;
+        top: 23%;
+        z-index: 2;
+        float: center;
+        display: none;
+    }
+}
+
+@media(min-width: 700px) {
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr repeat(2, minmax(auto, 25em)
+        ) 1fr;
+    }
+
+    nav ul{
+        display: flex;
+    }
+
+    #section-a .content-text{
+        columns: 2;
+        column-gap: 2em;
+    }
+
+    #section-a .content-text p{
+        padding-top: 0;
+    }
+
+
+    .content-wrap, #section-b ul {
+        grid-column: 2/4;
+    }
+
+    .box{
+        z-index: -1;
+    }
+
+    .box, #main-footer div {
+        grid-column: span 2;
+    }
+
+    #section-b ul{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #section-b li{
+        width: 31%;
+    }
+}
+
+/*  10) Page 2 - Mon Parcours
+===================================================================================================================
+*/
+
+#liens_internes {
+    display: flex;
+    list-style-type: none;
+    background-color: rgb(32, 168, 116);
+    margin:0;
+    padding: 0;
+    position: sticky;
+    width: 100%;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+  
+.sticky + #main {
+     padding-top: 60px;
+}
+
+/*  11) Page 3 - Mes Compétences
+===================================================================================================================
+*/
+
+#page-cv{
+    background: #f0ecb5;
+}
+
+#section-cv .content-wrap {
+    background: #504772;
+    text-align: center;
+    padding: 20px;
+    transition: all .3s;
+}
+
+#section-cv .content-wrap:hover {
+    background: #904b9e;
+    text-align: center;
+    padding: 20px;
+    transition: all .3s;
+}
+
+#section-cv2 .content-wrap2 {
+    background-color: #724747;
+    padding: 0 2vw;
+    text-align: center;
+    padding-bottom: 20px;
+    transition: all .3s;
+}
+
+#section-cv2 .content-wrap2:hover {
+    background-color: #af4444;
+    transition: all .3s;
+}
+
+#section-cv .box {
+    padding: 2em;
+    color: #fff;
+}
+
+#section-cv .box:first-child {
+    background: #475f72;
+    transition: all .3s;
+}
+
+#section-cv:hover .box:first-child {
+    background: #4e7ea5;
+    transition: all .3s;
+}
+
+#section-cv .box:last-child {
+    background: #496860;
+    transition: all .3s;
+}
+
+#section-cv:hover .box:last-child {
+    background: #55b96e;
+    transition: all .3s;
+}
+
+#section-cv ul,
+#section-cv2 ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#section-travaux .travaux h1 {
+    background-color: #a8a8a8;
+    border-radius: 0.65em 0.65em 0 0;
+}
+
+#section-travaux .travaux ul {
+    text-align: left;
+}
+
+#section-travaux .travaux {
+    color: #333;
+    margin: 3.5em 2em;
+    border: solid 2px white;
+    border-radius: 1em;
+    background: #4e7ea5;
+    box-shadow: 5px 5px 55px #1f1c1c;
+}
+
+/*  12) Page 4 - Conctact
+===================================================================================================================
+*/
+
+#section-a2 {
+    background: rgb(151, 150, 150);
+    border: none;
+    color: #FFF;
+}
+
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box;
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical 
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 24px 40px;
+    border: solid;
+    border-color: #477250;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 2em;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    background-color: #777;
+    padding: 20px;
+    margin: 70px;
+  }
+
+#page-contact {
+    background: #f8f084;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Otto CHWADAGIANI - Mon Parcours</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+    <!--Scripts pour menu de navigation Sticky-->
+
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+        
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+            } else {
+            navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+
+    <!--Menu de navigation-->
+
+    <nav>
+        <ul>
+            <li><a href="index.html">One Page</a></li>
+            <li><a href="page2.html">Mon Parcours</a></li>
+            <li><a href="page3.html">Compétences</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!--Liens Internes-->
+
+    <ul id="liens_internes" class="sticky">
+    <li><a href="#1college">2011-2015</a></li>
+    <li><a href="#1lycee">2015-2017</a></li>
+    <li><a href="#1ppi">Mai 2018</a></li>
+    <li><a href="#1buroscope">2018-2019</a></li>
+    <li><a href="#1webcademie">Avril 2019</a></li>
+    </ul>
+
+    <!--Sections-->
+
+    <section id="showcase" class="grid">
+        <div class="bg-image3"></div>
+        <div class="content-wrap">
+            <h1 id="1college" class="content-title">Collège<br>2011 - 2015</h1>
+            <p>
+            Je suis arrivé en France en 2011 à l'age de 12 ans. J'ai fait tout l'école secondaire dans lequel j'ai
+            appris la langue française. En 2015 J'ai obtenu mon brevet des collèges.
+            </p>
+        </div>
+        <div class="overlay">
+
+        </div>
+    </section>
+    <section id="showcase" class="grid">
+        <div class="bg-image2"></div>
+        <div class="content-wrap">
+            <h1 id="1lycee">Lycée Pro Métiers de la Mode et du Vêtement<br>2015 - 2017</h1>
+            <p>Attiré par les métiers artistiques j'ai décidé de faire un BAC PRO Mode.
+               J'ai arrêté en Terminal car le système scolaire ne me convenait pas. 
+               Au cours de ces 3 années dans la mode, j'ai développé des aptitudes qui me servent mainteneant dans le codage !
+            </p>
+        </div>
+    </section>
+    <section id="showcase" class="grid">
+        <div class="bg-image4"></div>
+        <div class="content-wrap">
+            <h1 id="1ppi">Formation d'orientation PPI<br>Mai 2018</h1>
+            <p>Déscolarisé, sans le BAC et sans projet professionnel, j'ai été dirigié par la Mission Locale d'integrer cette formation pour découvrir
+                différents secteurs du monde du travail.<br>
+                Ayant effectué une enquete métier dans une centre de formation de developpement web à FACE et en ayant fait un stage d'integrateur web à BUG,
+                 j'ai fini par trouver ma voie professionnelle dans le numérique et j'ai finis par valider mon projet
+                professionnelle.
+            </p>
+        </div>
+    </section>
+    <section id="showcase" class="grid">
+        <div class="bg-image5"></div>
+        <div class="content-wrap">
+            <h1 id="1buroscope">Prépa Digitale option: Developpeur Web<br>Octobre 2018 - Mars 2019</h1>
+            <p>Apres la formation d'orientation PPI j'ai décidé de faire une pré-formation digitale à Buroscope où j'ai appris
+                des bases des CMS (Wordpress), web design, photoshop, illustrator, le vocabulaire du code, UX et UI design, 
+                le fonctionement du PHP MySQL et entre autres pour me préparer une entrée dans une formation qualifiante et intensif dans le
+                numérique.
+            </p>
+        </div>
+    </section>
+    <section id="showcase" class="grid">
+        <div class="bg-image6"></div>
+        <div class="content-wrap">
+            <h1 id="1webcademie">Dernière ligne droite !<br>Web@Cadémie<br>Avril 2019</h1>
+            <p>Je souhaiterais intégrer la formation d'integrateur développeur web de Web@Cadémie à Rennes.
+                Ça me permetterais d'évoluer énormement et aquérir toutes les compétences necessaires pour
+                intégrer le monde du travail.<br>
+                Je suis très enthousiaste, motivé et prêt pour cette nouvelle aventure !
+            </p>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer id="main-footer" class="grid">
+        <div>Mon Parcours</div>
+        <div>Mini 4 Pages - <a href="#">Chwadagiani Otto</a></div>
+    </footer>
+</body>
+</html>
